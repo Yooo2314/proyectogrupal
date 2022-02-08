@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/*Header*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+body{
+    width: 100%;
+    background: gray;
+}
+
+.navegacion{
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu{
+    padding-top: 30px;
+    padding-left: 20px;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
+    display: grid;
+}
+.bar-btn{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 150px;
+    cursor: pointer;  
+}
+.bar-btn>p{
+    padding-left: 5px;
+    font-size: 40px;
+    color: white;
+}
+.bar-btn>img{
+    filter:invert(100%) sepia(100%) saturate(2%) hue-rotate(319deg) brightness(102%) contrast(101%);
+}
+
+.lista{
+    padding-left: 50px;
+    visibility: hidden;
+    list-style: none;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.lista li a:hover{
+    color: rgb(218, 216, 216);
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .lista{
+    visibility: visible;
+}
+
+#logo{
+    justify-self: center;
+}
+#logo>h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 100px;
+    color:white;
+}
