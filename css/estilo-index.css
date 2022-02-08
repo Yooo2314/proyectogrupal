@@ -78,3 +78,41 @@ body{
     font-size: 100px;
     color:white;
 }
+
+.seccion_1{
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+    
+}
+#im1{
+    position: relative;
+    background-image: url(../img/st_2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im2{
+    position: relative;
+    background-image: url(../img/st_3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im3{
+    position: relative;
+    justify-self: start;
+    background-image: url(../img/st_1.jpg);
+    background-size: cover;
+    width: 120%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
