@@ -20,9 +20,10 @@
 }
 
 .hero{
+
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgb(214, 95, 16) 90% #fff 10%);
+    background: linear-gradient(black 0%, orange 100%);
     align-items: center;
     
 }
@@ -30,7 +31,11 @@
 .nav__hero{
     color:rgb(236, 120, 12);
     height: 70px;
-    border-bottom: 5px solid Naranja rgb(255, 102, 0);
+    border-bottom: 2px solid #fff;
+}
+
+.head{
+    color: rgb(51, 48, 48);
 }
 
 .nav__container{
