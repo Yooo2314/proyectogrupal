@@ -8,7 +8,12 @@
 
 
 /*Header*/
-
+body{
+    width: 100%;
+    background: white;
+}
+main{
+}
 header{
     position: fixed;
     width: 100%;
@@ -25,10 +30,7 @@ header.abajo .lista{
     padding-right: 20px;
     padding-bottom: 20px;
 }
-body{
-    width: 100%;
-    background: white;
-}
+
 
 .navegacion{
     padding: 30px 0px 0px 0px;
@@ -92,83 +94,66 @@ body{
 
 
 
-/*seccion numero 1  , imagenes diagonales*/
-
-
+/*seccion numero 1  , imagen*/
 .seccion_1{
     z-index: 1;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
+    height: 50vh;
+}
+.seccion_1 article{
+    width: 100%;
+    height: 50vh;
     
 }
-#im1{
-    display: grid;
-    grid-template-rows: 100%;
-    background-image: url(../img/st_2.jpg);
-    background-size: cover;
+.seccion_1 article img{
     width: 100%;
-    height: 100vh;
-    transform-origin: top;
-    transform: skewX(-5deg);
+    height: 50vh;
 }
-#im1>article{
-    background-color: black;
-    transition: all 500ms ease-out;
-    opacity: 70%;
+
+/*seccion numero 2  , informacion*/
+
+.seccion_2{
+    z-index: 1;
+    width: 100%;
 }
-#im1:hover article{
-    opacity: 0%;
+.seccion_2 article{
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.titulo{
-    position:absolute;
-    color: white;
-    justify-self: center;
-    align-self: center;
+.seccion_2 article h1{
+    width: 100%;
     font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+
 }
-#titulo{
-    position:absolute;
-}
-#im2{
-    display: grid;
-    grid-template-rows: 100%;
-    background-image: url(../img/st_3.jpg);
-    background-size: cover;
+.seccion_2 article p{
+    color: rgb(66, 65, 65);
     width: 100%;
-    height: 100vh;
-    transform-origin: top;
-    transform: skewX(-5deg);
+    line-height: 50px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-#im2>article{
-    background-color: black;
-    transition: all 500ms ease-out;
-    opacity: 70%;
+/*seccion numero 3  , imagenes*/
+
+.seccion_3{
+    z-index: 1;
+    width: 100%;
 }
-#im2:hover article{
-    opacity: 0%;
-}
-#im3{
+.seccion_3 article{
+    background-color: gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: grid;
-    grid-template-rows: 100%;
-    justify-self: start;
-    background-image: url(../img/st_1.jpg);
-    background-size: cover;
-    width: 120%;
-    height: 100vh;
-    transform-origin: top;
-    transform: skewX(-5deg);
+    grid-template-columns: 1fr 1fr 1fr;
 }
-#im3>article{
-    background-color: black;
-    transition: all 500ms ease-out;
-    opacity: 70%;
+.seccion_3 article img{
+    justify-self: center;
+    width: 80%;
+    height: 73vh;
 }
-#im3:hover article{
-    opacity: 0%;
-}
+
+/*seccion numero 4  , texto*/
 
 
