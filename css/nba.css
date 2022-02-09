@@ -23,15 +23,16 @@
 
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(black 0%, orange 100%);
+    background: #fff;
     align-items: center;
     
 }
 
 .nav__hero{
+    background-color: black;
     color:rgb(236, 120, 12);
     height: 70px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgb(236, 120, 12);
 }
 
 .head{
