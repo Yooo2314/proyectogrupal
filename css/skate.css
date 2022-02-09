@@ -1,0 +1,93 @@
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: rgb(214, 95, 16);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.servis{
+    background: #ffffff;
+    padding-bottom: 60px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 10px 5px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 30%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 50%;
+}
+
+
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-skate{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0;  
+    margin: auto;
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px 10px 10px 5px;
+}
+
+.contenedor-skate2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0;  
+    margin: auto;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px 10px 10px 5px;
+}
+
+.imagen{
+    width: 37%;
+}
+
+.contenedor-skate .textos{
+    width: 48%;
+}
+
+.textos h3{
+    margin-bottom: 15px;
+}
+
+.textos h3 span{
+    background: rgb(214, 95, 16);
+    color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+}
+
+.textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
