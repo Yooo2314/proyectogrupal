@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> ba0051a32794b5398aee17eefa43ca6ab08d022c
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
 *{
@@ -8,6 +11,7 @@
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -158,3 +162,170 @@
 
 
 
+=======
+/*Header*/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 17vh;
+    z-index: 10;
+    transition: all 500ms ease-out;
+}
+/*clase con js para poner un fondo al hacer scroll*/
+header.abajo{
+    background-color: black;
+}
+header.abajo .lista{
+    background-color: black;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+body{
+    width: 100%;
+    background: white;
+}
+
+.navegacion{
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu{
+    padding-top: 30px;
+    padding-left: 20px;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
+    display: grid;
+}
+.bar-btn{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 150px;
+    cursor: pointer;  
+}
+.bar-btn>p{
+    padding-left: 5px;
+    font-size: 40px;
+    color: white;
+}
+.bar-btn>img{
+    filter:invert(100%) sepia(100%) saturate(2%) hue-rotate(319deg) brightness(102%) contrast(101%);
+}
+
+.lista{
+    padding-left: 50px;
+    visibility: hidden;
+    list-style: none;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.lista li a:hover{
+    color: rgb(218, 216, 216);
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .lista{
+    visibility: visible;
+}
+
+#logo{
+    justify-self: center;
+}
+#logo>h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 100px;
+    color:white;
+}
+
+
+
+/*seccion numero 1  , imagenes diagonales*/
+
+
+.seccion_1{
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+#im1{
+    display: grid;
+    grid-template-rows: 100%;
+    background-image: url(../img/st_2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im1>article{
+    background-color: black;
+    transition: all 500ms ease-out;
+    opacity: 70%;
+}
+#im1:hover article{
+    opacity: 0%;
+}
+.titulo{
+    position:absolute;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    font-size: 60px;
+}
+#titulo{
+    position:absolute;
+}
+#im2{
+    display: grid;
+    grid-template-rows: 100%;
+    background-image: url(../img/st_3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im2>article{
+    background-color: black;
+    transition: all 500ms ease-out;
+    opacity: 70%;
+}
+#im2:hover article{
+    opacity: 0%;
+}
+#im3{
+    display: grid;
+    grid-template-rows: 100%;
+    justify-self: start;
+    background-image: url(../img/st_1.jpg);
+    background-size: cover;
+    width: 120%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im3>article{
+    background-color: black;
+    transition: all 500ms ease-out;
+    opacity: 70%;
+}
+#im3:hover article{
+    opacity: 0%;
+}
+
+
+>>>>>>> ba0051a32794b5398aee17eefa43ca6ab08d022c

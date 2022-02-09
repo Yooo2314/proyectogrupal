@@ -8,16 +8,29 @@
 
 
 /*Header*/
-
+body{
+    width: 100%;
+    background: white;
+}
+main{
+}
 header{
     position: fixed;
     width: 100%;
-    z-index: 1;
+    height: 17vh;
+    z-index: 10;
+    transition: all 500ms ease-out;
 }
-body{
-    width: 100%;
-    background: gray;
+/*clase con js para poner un fondo al hacer scroll*/
+header.abajo{
+    background-color: black;
 }
+header.abajo .lista{
+    background-color: black;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 
 .navegacion{
     padding: 30px 0px 0px 0px;
@@ -79,40 +92,68 @@ body{
     color:white;
 }
 
+
+
+/*seccion numero 1  , imagen*/
 .seccion_1{
     z-index: 1;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    overflow: hidden;
+    height: 50vh;
+}
+.seccion_1 article{
+    width: 100%;
+    height: 50vh;
     
 }
-#im1{
-    position: relative;
-    background-image: url(../img/st_2.jpg);
-    background-size: cover;
+.seccion_1 article img{
     width: 100%;
-    height: 100vh;
-    transform-origin: top;
-    transform: skewX(-5deg);
+    height: 50vh;
 }
-#im2{
-    position: relative;
-    background-image: url(../img/st_3.jpg);
-    background-size: cover;
+
+/*seccion numero 2  , informacion*/
+
+.seccion_2{
+    z-index: 1;
     width: 100%;
-    height: 100vh;
-    transform-origin: top;
-    transform: skewX(-5deg);
 }
-#im3{
-    position: relative;
-    justify-self: start;
-    background-image: url(../img/st_2.jpg);
-    background-size: cover;
-    width: 120%;
-    height: 100vh;
-    transform-origin: top;
-    transform: skewX(-5deg);
+.seccion_2 article{
+    padding-left: 50px;
+    padding-right: 50px;
 }
+.seccion_2 article h1{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+
+}
+.seccion_2 article p{
+    color: rgb(66, 65, 65);
+    width: 100%;
+    line-height: 50px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+/*seccion numero 3  , imagenes*/
+
+.seccion_3{
+    z-index: 1;
+    width: 100%;
+}
+.seccion_3 article{
+    background-color: gray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.seccion_3 article img{
+    justify-self: center;
+    width: 80%;
+    height: 73vh;
+}
+
+/*seccion numero 4  , texto*/
+
+
