@@ -1,0 +1,217 @@
+<!DOCTYPE html> <!-- Etiqueta que indica docuento version 5.0 de HTML-->
+<html> <!-- Esta etiqueta indica al explorador que existe un doc tipo html-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859">
+    <meta name="author" content="Daniel Mauricio Cuesta"/>
+    <meta name="description" content="Es una pagina de venta de productos para mascotas"/>
+    <meta name="keywords" content="venta,mascotas,productos,ofertas,animales">
+    <meta name="copyright" content="https://www.youtube.com/">
+    <meta name="date" content="2021-09-06T03:51:30+00:00">
+    <meta property="og:title" content="Titulo" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+
+    <link rel= "stylesheet" type= "text/css" href="css\estilo-index.css">
+
+    <title>tienda de mascotas</title>
+
+</head>
+<body>
+    <header>
+        <article class = "logo">
+            <img src="img\prueba log 1.svg" width = "74,41" height = "61,42" alt = "Imagen">
+            <h1 id="titulo-nav">petstore</h1>
+        </article>
+		<nav class = "menu">
+            <ul>
+				<!--items de la lista-->
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#quienes-somos">Quienes somos</a>
+				<!--creamos una sublista-->
+					<ul>
+						<!--items de la sublista-->
+						<li><a href="#vision">Vision</a></li>
+						<li><a href="#mision">Mision</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Productos y servicios </a>
+					<!--items de la sublista-->
+					<ul>
+						<li><a href="#catalogo">Productos </a></li>
+						<li><a href="#">Servicios </a></li>
+						<li><a href="#">Aliados estrategicos </a></li>
+					</ul>
+				</li>
+				<!--creamos una sublista-->
+				<li><a href="Contacto.html">Contacto </a></li>
+			</ul> 
+		</nav>
+	</header>
+    <main>
+        <section>
+            <!-- <article class = "slider">
+                <ul>
+                    <li>
+                        <img src="img\gato-cortado.jpg" alt = "">
+                    </li>
+                    <li>
+                        <img src="img\perro-cortado.jpg"  alt = "">
+                    </li>
+                    <li>
+                        <img src="img\gato-cortado-2.jpg" alt = "">
+                    </li>
+                    <li>
+                        <img src="img\perro-cortado-2.jpg"   alt = "">
+                    </li>
+                </ul>
+            </article> -->
+            <article>
+                <h2 id="quienes-somos">Quienes somos?</h2>
+                <p class="parrafos">somos una gran empresa de venta de productos para mascotas, especialmente trabajamos con perros y gatos</p>
+                <br>
+                <br>
+                <h2 id="mision">Mision</h2>
+                <p class="parrafos">La mision de nuestra empresa es poder brindar un excelente servicios
+                    ,donde el clienta se sietna satisfecho con las necesidades de sus mascotas como lo son
+                    la alimentacion y la diversion de sus mascotas.
+                </p>
+                <h2 id="vision">Vision</h2>
+                <p class="parrafos">La Vision de nuestra empresa tiene como objetico el incrementar el 
+                    numeo de clientes, que hayan puesto en nuestra en presa un gran sentido de confianza,
+                    por lo que nuestros enfoques se fundamentan en un excelente servicio, gran calidad en nuestros productos
+                    y una posibilidad de venta online bien consolidada.
+                </p>
+                <iframe  src="https://www.youtube.com/embed/vtP-zrbc9PY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2 id="catalogo">nuestro catalogo</h2>
+                <br>
+                <table class="perros" >
+                    <tbody>
+                        <caption><h3>perros</h3></caption>
+                        <tr>
+                            <th colspan="3">juguetes:</th>
+                        </tr>
+                        <tr>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\pelota.png" width = "300" height = "200" alt = "Imagen"></td>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\gueso_goma.jpg" width = "300" height = "200" alt = "Imagen"></td>
+                        </tr>
+                        <tr>
+                            <td>pelota para perro
+                                <br>
+                                <br>
+                                20.000 COP
+                            </td>
+                            <td>hueso de goma
+                                <br>
+                                <br>
+                                40.000 COP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "comprar">Comprar</td>
+                            <td class = "comprar">Comprar</td>
+                        </tr>
+                            
+                        <tr>
+                            <th colspan="3">comida:</th>
+                        </tr>
+                        <tr>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\Logo-Dog.png" width = "300" height = "200" alt = "Imagen"></td>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\Ringo.png" width = "300" height = "200" alt = "Imagen"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class = "texto-tabla">bulto de comida dogshow por 100 gramos
+                                <br>
+                                <br>
+                                70.000COP
+                            </td>
+                            <td class = "texto-tabla">bulto de comida ringo por 100 gramos
+                                <br>
+                                <br>
+                                85.000COP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "comprar">Comprar</td>
+                            <td class = "comprar">Comprar</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <table class="perros" >
+                    <tbody>
+                        <caption><h3>gatos</h3></caption>
+                        <tr>
+                            <th colspan="3">juguetes</th>
+                        </tr>
+                        <tr>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\bola_gatos.jpg" width = "300" height = "200" alt = "Imagen"></td>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\raton_juguete.jpg" width = "300" height = "200" alt = "Imagen"></td>
+                        </tr>
+                        <tr>
+                            <td class = "texto-tabla">raton de juguete
+                                <br>
+                                <br>
+                                20.000 COP
+                            </td>
+                            <td class = "texto-tabla"> bola de lana
+                                <br>
+                                <br>
+                                25.000 COP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "comprar">Comprar</td>
+                            <td class = "comprar">Comprar</td>
+                        </tr>
+                       
+                        <tr>
+                            <th colspan="3">comida</th>
+                        </tr>
+                        <tr>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\cat_show.png" width = "300" height = "200" alt = "Imagen"></td>
+                            <td><img src="C:\Users\daniel\Downloads\www\img\miringo.png" width = "300" height = "200" alt = "Imagen"></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td class = "texto-tabla">bulto de comida catshow por 100 gramos
+                                <br>
+                                <br>
+                                65.000COP
+                            </td>
+                            <td class = "texto-tabla">bulto de comida miringo por 100 gramos
+                                <br>
+                                <br>
+                                50.000COP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "comprar">Comprar</td>
+                            <td class = "comprar">Comprar</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>para mas informacion contactanos:</p>
+        <ul>
+            <li>Tel. 3186709800</li>
+            <li>mail petstore@correoelectronico.com</li>
+        </ul>
+
+    </footer>
+</body>
+</html>

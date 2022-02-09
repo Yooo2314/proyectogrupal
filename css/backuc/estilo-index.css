@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C7BDA1;
+} 
+header{
+    background-color: #002151;
+    position: relative;
+}
+main{
+    padding-top: 8%;
+}
+.navegacion{
+    background-color: #002151;
+    display:block;
+    width: 100%;
+    padding: 0% 33%;
+    position: fixed;
+    
+
+
+}
+
+.navegacion ul{
+    list-style: none;
+
+}
+
+.menu > li{ /*con el signo > solo editamos los li dentro del menu*/
+    position: relative;
+    display: inline-block;
+
+}.menu > li > a{
+    display: block;
+    padding: 20px 20px;
+    color: #F8EBC8;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 20px;
+    
+}
+
+.menu li a:hover{/* no permite hacer acciones*/
+    background-color: #00265E;
+    /*color: #BFB5A4;*/
+    transition: all .3s;
+}
+
+/*submenu 1 "menu-1"*/
+
+.submenu{
+    position: absolute;
+    background:#002151;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    /*display: none;*/
+
+}
+.submenu li a{
+    display: block;
+    padding: 20px;
+    color: #F8EBC8;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.menu li:hover .submenu{ /*hover se usa para acciones con el mouse, si recae la accion sobre un objeto se indica*/ 
+    visibility: visible;
+    opacity: 1;
+}
+
+#titulo-1{
+    text-align: center;
+    font-family: Georgia;
+    color: #F8EBC8;
+}
+
+#logo{
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*slider*/
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: linear;
+}
+@keyframes cambio {/*indica el porcentaje del tiempo en el que sucederan las animaciones*/
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25%{margin-left: -100;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+
+    80%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+.slider img{
+    width: 100%;
+}
+
+article h2{
+    scroll-margin-top: 10ex;
+    margin-top: 50px;
+    margin-left: 15px;
+    font-family: georgia;
+    font-size: 30px;
+}
+article p{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-family: georgia;
+    font-size: 20px;
+    margin-right: 100px;
+}
+iframe{
+    margin-top: 50px;
+    margin-left: 30%;
+    width:860px ;
+    height:600px;
+}
+
+.perros{
+    margin-left: 35%;
+}
+.perros h3{
+    margin-top: 50px;
+    font-family: georgia;
+    font-size: 20px;
+    text-align: center;
+    background-color: #002151;
+    padding: 30px;
+    color:#F8EBC8;
+}
+.perros th{
+    font-family: georgia;
+    font-size: 15px;
+    text-align: left;
+    padding: 30px 30px 30px 0px;
+}
+.comprar{
+    background-color: #787261;
+    font-family: georgia;
+    text-align: center;
+    color: #F8EBC8;
+}
+
+.comprar:hover {
+    background-color: #00265E;
+}
+.perros tbody td{
+    padding:10px;
+    font-family: georgia;
+    text-align: center;
+}
+footer{
+    background-color: #38352D;
+    font-family: Georgia;
+    color:#F8EBC8;
+    padding: 100px;
+}
+footer p{
+    font-family: georgia;
+    color: #F8EBC8;
+    font-size: 20px;
+    text-align: left;
+}
+footer ul{
+    font-family: georgia;
+    color: #F8EBC8;
+    font-size: 15px;
+}
+

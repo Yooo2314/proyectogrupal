@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F8EBC8;
+} 
+header{
+    background-color: #002151;
+    position: relative;
+}
+main{
+    padding-top: 8%;
+}
+.navegacion{
+    background-color: #002151;
+    display:block;
+    width: 100%;
+    padding: 0% 35%;
+    position: fixed;
+    
+
+
+}
+
+.navegacion ul{
+    list-style: none;
+
+}
+
+.menu > li{ /*con el signo > solo editamos los li dentro del menu*/
+    position: relative;
+    display: inline-block;
+
+}.menu > li > a{
+    display: block;
+    padding: 20px 20px;
+    color: #F8EBC8;
+    text-decoration: none;
+    font-family: Georgia;
+    
+}
+
+.menu li a:hover{/* no permite hacer acciones*/
+    background-color: #00265E;
+    /*color: #BFB5A4;*/
+    transition: all .3s;
+}
+
+/*submenu 1 "menu-1"*/
+
+.submenu{
+    position: absolute;
+    background:#002151;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    /*display: none;*/
+
+}
+.submenu li a{
+    display: block;
+    padding: 20px;
+    color: #F8EBC8;
+    text-decoration: none;
+    font-family: Georgia;
+}
+
+.menu li:hover .submenu{ /*hover se usa para acciones con el mouse, si recae la accion sobre un objeto se indica*/ 
+    visibility: visible;
+    opacity: 1;
+}
+
+#titulo-1{
+    text-align: center;
+    font-family: Georgia;
+    color: #F8EBC8;
+}
+
+#logo{
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section{
+    background-color: #38352D;
+    color: #F8EBC8;
+    font-family: georgia;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+main h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
