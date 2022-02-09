@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*responsive*/
+
+/*Header*/
+
+header{
+    
+}
+body{
+    width: 100%;
+    background: #ede0d4;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    background: #9c6644;
+    color: white;
+}
+.menu{
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+.menu>li>a{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ede0d4;
+    padding: 40px 20px 40px 20px;
+}
+.menu li a:hover{
+    background: #7f5539;
+}
+.submenu{
+    width: 100%;
+    background: #9c6644;
+    position: absolute;
+    list-style: none;
+    visibility: hidden
+}
+.submenu li a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ede0d4;
+    padding: 20px;
+    background: #9c6644;
+    text-justify: initial;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    
+}
+
+.logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.logo #logo{
+    padding: 0px 0px 0px 20px;
+    width: 200px;
+}
+
+/* seccion 1 ................................................. */
+
+#seccion_1{
+    background-image: url('../img/gaticos-1.jpg');
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#frase_inicial{
+    color: #9c6644;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-left: 60%;
+    margin-right: 40px;
+    padding: 80px 20px 80px 20px;
+    font-size: 60px;
+    font-weight: 700;
+    background-color: #ede0d4;
+}
+#seccion_2{
+    display: flex;
+    flex-direction: column;
+
+}
+#seccion_2 div{
+    padding: 50px;
+}
+.parallax{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.parrafos{
+    display: flex;
+    justify-content:space-between;
+}
+.separacion{
+    padding: 5%;
+    background-image: url('../img/patitas.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+#imagen_1{
+    background-image: url('../img/seccion_2_img_1.jpg');
+}
+#imagen_2{
+    background-image: url('../img/seccion_2_img_2.jpg');
+}
+#imagen_3{
+    background-image: url('../img/seccion_2_img_3.jpg');
+}
+.fondo_de_imagen{
+    padding: 15%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    border: 40px solid #ddb892;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-self: center; 
+}
+.texto h2{
+    scroll-margin-top: 13ex;
+    scroll-behavior: smooth;
+    padding: 3% 4%;
+    background-color: #9c6644;
+    margin-right: 43%;
+    margin-left: 12%;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 305%;;
+    color: #ede0d4;
+}
+.texto p{
+    padding-left: 4%;
+    padding-top: 5%;
+    margin-left: 8%;
+    margin-right: 6%;
+    font-size: 305%;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* footer.................................................................... */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #6b705c;
+}
+
+footer>ul {
+    list-style: none;
+    font-size: 20px;
+    color: #ede0d4;
+    padding: 5% 3% 7%;
+    align-self: center;
+    margin-right: 5%;
+}
+footer>ul>li{
+    margin-left: 10%;
+    width: 150%;
+}
+footer>ul>li>ul {
+    list-style: none;
+    font-size: 20px;
+    color: #ede0d4;
+}
+footer>ul>li>ul>li {
+    width: 150%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+footer #lineafoot{
+    padding: 2px;
+    background-color: #ede0d4;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+
+}
+footer>article{
+    padding: 5%;
+}
+footer>article>img{
+    margin-top: 10%;
+    width: 10%;
+    align-self: center;
+}
+
