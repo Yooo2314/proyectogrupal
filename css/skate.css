@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
 .contenedor{
     padding: 60px 0;
     width: 90%;
@@ -6,7 +13,7 @@
     overflow: hidden;
 }
 
-.titulo{
+.titulos{
     color: rgb(214, 95, 16);
     font-size: 30px;
     text-align: center;
@@ -39,6 +46,7 @@
 
 .servicio-ind h3{
     margin: 10px 0;
+    
 }
 
 .wave{
@@ -90,4 +98,235 @@
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+}
+
+
+.footer{
+    background: Naranja rgb(214, 95, 16);
+}
+
+.footer__copy{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    width: 100%;
+}
+
+.politicas__privacidad{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.politicas__privacidad:hover{
+ text-decoration: underline;  
+}
+
+.get-email{
+    width: 50%;
+}
+
+.socialmedia{
+  margin-top: 24px;
+  display: flex;
+}
+
+.socialmedia_icon{
+    font-size: 18px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.socialmedia_legend{
+    margin-right: 16px;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.item_contact{
+    width: 33%;
+    padding: 60px 0;
+    text-align: center;
+    background: black;
+}
+
+/*Header*/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 17vh;
+    z-index: 10;
+    transition: all 500ms ease-out;
+}
+/*clase con js para poner un fondo al hacer scroll*/
+header.abajo{
+    background-color: black;
+}
+header.abajo .lista{
+    background-color: black;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+body{
+    width: 100%;
+    background: white;
+}
+
+.navegacion{
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu{
+    padding-top: 30px;
+    padding-left: 20px;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
+    display: grid;
+}
+.bar-btn{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 150px;
+    cursor: pointer;  
+}
+.bar-btn>p{
+    padding-left: 5px;
+    font-size: 40px;
+    color: white;
+}
+.bar-btn>img{
+    filter:invert(100%) sepia(100%) saturate(2%) hue-rotate(319deg) brightness(102%) contrast(101%);
+}
+
+.lista{
+    padding-left: 50px;
+    visibility: hidden;
+    list-style: none;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.lista li a:hover{
+    color: rgb(218, 216, 216);
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .lista{
+    visibility: visible;
+}
+
+#logo{
+    justify-self: center;
+}
+#logo>h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 100px;
+    color:white;
+}
+
+
+
+/*seccion numero 1  , imagenes diagonales*/
+
+
+.seccion_1{
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+#im1{
+    display: grid;
+    grid-template-rows: 100%;
+    background-image: url(../img/st_2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im1>article{
+    background-color: black;
+    transition: all 500ms ease-out;
+    opacity: 70%;
+}
+#im1:hover article{
+    opacity: 0%;
+}
+.titulo a{
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+.titulo a:hover{
+    color: rgb(218, 216, 216);
+}
+.titulo{
+    position:absolute;
+    justify-self: center;
+    align-self: center;
+    
+}
+#titulo{
+    position:absolute;
+}
+#im2{
+    display: grid;
+    grid-template-rows: 100%;
+    background-image: url(../img/st_3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im2>article{
+    background-color: black;
+    transition: all 500ms ease-out;
+    opacity: 70%;
+}
+#im2:hover article{
+    opacity: 0%;
+}
+#im3{
+    display: grid;
+    grid-template-rows: 100%;
+    justify-self: start;
+    background-image: url(../img/st_1.jpg);
+    background-size: cover;
+    width: 120%;
+    height: 100vh;
+    transform-origin: top;
+    transform: skewX(-5deg);
+}
+#im3>article{
+    background-color: black;
+    transition: all 500ms ease-out;
+    opacity: 70%;
+}
+#im3:hover article{
+    opacity: 0%;
 }

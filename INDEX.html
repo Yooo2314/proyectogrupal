@@ -1,36 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Etiqueta que indica docuento version 5.0 de HTML-->
+<html> <!-- Esta etiqueta indica al explorador que existe un doc tipo html-->
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/index.css">
-=======
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel= "stylesheet" type= "text/css" href="css\estilo-index.css">
->>>>>>> login
-    <title>Document</title>
+    <meta charset="ISO-8859">
+    <link rel= "stylesheet" type= "text/css" href="css/index.css">
+
+    <title>streetsport</title>
 </head>
 <body>
-    <!--daniel-->
-<<<<<<< HEAD
-   <header></header>
-    <!--kevin-->
-  <main>        
-            <section class="contenedor sobre-mi">
-                <h2 class="titulo">Deportes</h2>
-                <article class="contenedor-sobre-mi">
-                  <img src="img/ilustracion.png" alt="" class="imagen">    
+    <!--Daniel-->
+    <header>
+		<nav class = "navegacion">
+            <article class="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <img src="/vector/menú.svg">
+                    <p>Menú</p>
+                </label>
+                <article></article>
+                <article></article>
+                <ul class="lista">
+                    <li><a href="INDEX.html">Inicio</a></li>
+                    <li><a href="#Deportes">Información</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </article> 
+            <article id="logo">
+                <h1>streports</h1>
+            </article>
+		</nav>
+	</header>
+    <main>
+        <section class="seccion_1">
+            <article id="im1">
+                <article></article>
+                <h2 class="titulo"><a href="skate.html">Skate</a></h2>
+            </article>
+            <article id="im2">
+                <article></article>
+                <h2 class="titulo"><a href="Nba.html">Baloncesto</a></h2>
+            </article>
+            <article id="im3">
+                <article></article>
+                <h2 class="titulo"><a href="Parkour.html">Parkour</a></h2>
+            </article>
+        </section>
+        <!--Kevin-->
+        <section class="contenedor sobre-mi" id="Deportes">
+            <h2 class="titulos" >Deportes</h2>
+            <article class="contenedor-sobre-mi">
+                <img src="img/ilustracion.png" alt="" class="imagen">    
                   <article class="textos">
-                      <h3><span>1</span>sobre el sitio web</h3>
-                      <p>Esta pagina web esta desarrollada con el fin de mostrarte informarte sobre estos tres deportes. Puede que despues de visitarla te interese alguno de estos deportes, cada uno con su maravilla y atraccion hacia el mejor publico. </p>
+                    <h3><span>1</span>sobre el sitio web</h3>
+                    <p>Esta pagina web esta desarrollada con el fin de mostrarte informarte sobre estos tres deportes. Puede que despues de visitarla te interese alguno de estos deportes, cada uno con su maravilla y atraccion hacia el mejor publico. </p>
                   </article>     
-                </article>
-            </section>
-            <section class="contenedor">
+            </article>
+        </section>
+        <section class="contenedor">
             <section class="servis">
               <article>
-                  <h2 class="titulo">Lo que podras ver en la pagina web</h2>
+                  <h2 class="titulos">Lo que podras ver en la pagina web</h2>
                   <section class="servicio-cont">
                   <article class="servicio-ind">
                       <img src="img/basketball.jpg" alt="" class="img">
@@ -47,51 +81,35 @@
                   </section>
               </article>
             </section>
-            </section>
-        
-  </main>
-=======
-    <header>
-		<nav class = "navegacion">
-            <article class="menu">
-                <input type="checkbox" id="check">
-                <label for="check" class="bar-btn">
-                    <img src="/vector/menú.svg">
-                    <p>Menú</p>
-                </label>
-                <article></article>
-                <article></article>
-                <ul class="lista">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Información</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </article> 
-            <article id="logo">
-                <h1>streports</h1>
-            </article>
-		</nav>
-	</header>
-    <!--kevin-->
-    <main>
-        <!--seccion 1: imagenes en diagonal-->
-        <section class="seccion_1">
-            <article id="im1">
-                <h2>skate</h2>
-                <article class="capa">
-            </article>
-            <article id="im2">
-                <h2>baloncesto</h2>
-                <article class="capa">
-            </article>
-            <article id="im3">
-                <h2>parkour</h2>
-                <article class="capa">
-            </article>
-        </section>
+        </section>    
     </main>
->>>>>>> login
+
     <!--julian-->
-    <footer></footer>
+
+    <footer class="footer" id="footer">
+    
+        <article class="contact">
+            <id class="item_contact">
+                <i class='bx bx-copyright contact__icon' ></i>
+                <h3 class="contact__title">StreetSports</h3>
+                
+            </id>
+            <id class="item_contact">
+                <i class='bx bx-mail-send contact__icon' ></i>
+                <h3 class="contact__title">streetsport@gmail.com</h3>
+                
+            </id>
+            <id class="item_contact">
+                <i class='bx bxl-whatsapp contact__icon' ></i>
+                <h3 class="contact__title">Contactanos ahora</h3>
+                
+            </id>
+        </article>
+
+    </footer>
+
+
+
 </body>
+<script src="js/index.js"></script>
 </html>
