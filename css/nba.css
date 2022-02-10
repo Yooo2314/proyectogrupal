@@ -159,11 +159,25 @@
 
 }
 
+.AllStar{
+    background: rgba(90, 81, 81, 0.932);
+}
 
 
+.Titulo_All{
+    font-size: 38px ;
+    color: rgb(236, 120, 12);
+}
 
+.Sub_all{
+   font-size: 25px;
+   color: rgb(236, 120, 12);
 
+}
 
+.video{
+    margin-top: 15px;
+}
 
 
 
