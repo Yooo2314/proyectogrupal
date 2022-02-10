@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Bebas Neue';
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+.hero{
+
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    align-items: center;
+    
+}
+
+.nav__hero{
+    background-color: black;
+    color:rgb(236, 120, 12);
+    height: 70px;
+    border-bottom: 2px solid rgb(236, 120, 12);
+}
+
+.head{
+    color: rgb(51, 48, 48);
+}
+
+.nav__container{
+    display:  flex;
+    align-items:  center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+
+}
+
+.logo_name{
+    font-size: 150px;
+}
+
+.link{
+    display: inline-block;
+    color: #FACF16;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link :hover{
+    color: #fff;
+
+}
+
+.link--active{
+    color: #FACF16;
+    font-weight: 700;
+}
+.point{
+    color: Naranja rgb(214, 95, 16);
+}
+
+.hero__main{
+    height: calc(100hv - 70px);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+    height: inherit;
+}
+
+
+.hero__textos{
+    width: 48%;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: black;
+
+}
+
+.title__active{
+    color: Naranja rgb(214, 95, 16);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: rgb(133, 62, 15);
+    text-shadow: rgb(0, 0, 0);
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.slider{
+    width: 750px;
+    height: 90%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    overflow: hidden;
+
+    animation: cambio 20s infinite alternate;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+.slider img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0; }
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    75% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: #FACF16;
+    text-align: none;
+    color: black;
+    font-weight: 700;
+    box-shadow: #fff;
+    border-radius: 6px;
+
+}
+
+.AllStar{
+    background: rgba(90, 81, 81, 0.932);
+}
+
+
+.Titulo_All{
+    font-size: 38px ;
+    color: rgb(236, 120, 12);
+}
+
+.Sub_all{
+   font-size: 25px;
+   color: rgb(236, 120, 12);
+
+}
+
+.video{
+    margin-top: 15px;
+}
+
+
+
+
